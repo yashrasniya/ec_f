@@ -4,7 +4,10 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-color: #F8F1F1;
+  --primary_color-2:#19456B;
+  --primary_color-3:#16C79A;;
+  --background-start-rgb: #F8F1F1;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -17,11 +20,51 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /*color: rgb(var(--foreground-rgb));*/
+  background: var(--background-color);
+  font-family: Nunito, serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+input{
+  background: var(--background-color);
+  color:var(--primary_color-2 );
+
+}
+input::placeholder{
+  color: rgba(25, 69, 107, 0.25);
+
+}
+
+input.middle:focus {
+  outline-width: 0;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.search{
+  border: 2px solid #19456B;
+
+
+}
+.nav-bar{
+  position: sticky;
+  z-index: 3;
+  /*bottom: 0;*/
+  background-color: var(--background-color);
+  left: 0;
+  bottom: 0;
+  box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.active{
+
+  color: var(--primary_color-3);
+  &
+  path{fill: var(--primary_color-3);}
 }

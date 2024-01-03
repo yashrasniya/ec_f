@@ -3,15 +3,13 @@
 import {Carousel} from "@material-tailwind/react";
 import React from "react";
 import {useRouter} from "next/navigation";
-import Image from 'next/image'
 
-
-const Img = (e: { link: string; url: string })  => {
+const Img = (e)  => {
     const router = useRouter()
 
     return(
 
-      <Image
+      <img
           src={e?.url}
           alt="image 1"
           className=" w-full h-full object-covers"

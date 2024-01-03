@@ -1,12 +1,11 @@
 import {Search_bar} from "@/components/search";
 import {Nav_bar} from "@/components/navbar";
 import React from "react";
-import Image from 'next/image'
 
 const Product = () => {
   return(
       <div className={'flex items-center gap-3 text-primary-1'}>
-          <Image src={'/product.png'}  className={'w-60'} alt={' '}/>
+          <img src={'/product.png'}  className={'w-60'} alt={' '}/>
           <div className={''}>
           <p className={'text-[12px]'}>
               Cosmic Byte Hades 2.4Ghz Wireless, Bluetooth Headphone, Dual Mode....

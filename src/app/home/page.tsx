@@ -5,14 +5,14 @@ import React from "react";
 import {Nav_bar} from "@/components/navbar";
 import {Search_bar} from "@/components/search";
 import {Carousel2} from "@/app/home/Carousel";
-import Image from "next/image";
 
 
 
 const Product_preview = (e: { img: string; price: string; title: string; live: boolean }) => {
   return(
       <div className={'bg-[#fff] w-full text-[10px]  p-3 rounded-md'}>
-          <Image src={e?.img}  className={'w-full'} alt={''}/>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={e?.img}  className={'w-full'} alt={''} />
           <p>{e?.title}</p>
           <p className={'flex gap-2'}>₹{e?.price}/-
               {e?.live?<svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">

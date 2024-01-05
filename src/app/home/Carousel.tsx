@@ -5,16 +5,18 @@ import React from "react";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
 
-const Img = (e)  => {
+const Img = (e:{url:string;link:string})  => {
     const router = useRouter()
 
     return(
 
-      <Image
+        // eslint-disable-next-line @next/next/no-img-element
+      <img
           src={e?.url}
           alt="image 1"
           className=" w-full h-full object-covers"
             onClick={()=>router.push(e?.link)}
+
       />
   )
 }

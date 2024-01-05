@@ -6,7 +6,8 @@ import Image from "next/image";
 const Product = () => {
   return(
       <div className={'flex items-center gap-3 text-primary-1'}>
-          <Image src={'/product.png'}  className={'w-60'} alt={' '}/>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={'/product.png'}  className={'w-60'} alt={' '} />
           <div className={''}>
           <p className={'text-[12px]'}>
               Cosmic Byte Hades 2.4Ghz Wireless, Bluetooth Headphone, Dual Mode....

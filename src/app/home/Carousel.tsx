@@ -11,11 +11,12 @@ const Img = (e:{url:string;link:string})  => {
     return(
 
         // eslint-disable-next-line @next/next/no-img-element
-      <img
+      <Image
           src={e?.url}
           alt="image 1"
           className=" w-full h-full object-covers"
             onClick={()=>router.push(e?.link)}
+
 
       />
   )

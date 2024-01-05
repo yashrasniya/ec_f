@@ -1,6 +1,5 @@
 
 import React from "react";
-import {Nav_bar} from "@/components/navbar";
 import {Search_bar} from "@/components/search";
 import {Carousel2} from "@/app/home/Carousel";
 
@@ -81,7 +80,7 @@ export default function Home() {
           <Recommender_product></Recommender_product>
 
         </div>
-        <Nav_bar></Nav_bar>
+        {/*<Nav_bar></Nav_bar>*/}
 
       </>
 

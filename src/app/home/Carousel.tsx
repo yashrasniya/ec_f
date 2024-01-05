@@ -16,7 +16,8 @@ const Img = (e:{url:string;link:string})  => {
           alt="image 1"
           className=" w-full h-full object-covers"
             onClick={()=>router.push(e?.link)}
-
+          width={500}
+          height={500}
 
       />
   )
